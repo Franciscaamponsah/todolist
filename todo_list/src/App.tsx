@@ -50,6 +50,7 @@ const App: FC = () => {
               type="text"
               placeholder="Enter Task"
               onChange={handleInputChange}
+              value={text}
             />
             <Button type="primary" onClick={addTask}>
               Add Task
@@ -64,6 +65,7 @@ const App: FC = () => {
                     type="checkbox"
                     checked={task.done}
                     onChange={() => toggle(task.id)}
+                    value={text}
                   />
                   <span
                     style={{
